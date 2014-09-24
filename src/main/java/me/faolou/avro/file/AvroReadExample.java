@@ -1,5 +1,6 @@
-package me.faolou.avro;
+package me.faolou.avro.file;
 
+import me.faolou.avro.User;
 import org.apache.avro.file.DataFileReader;
 import org.apache.avro.io.DatumReader;
 import org.apache.avro.specific.SpecificDatumReader;
@@ -7,7 +8,7 @@ import org.apache.avro.specific.SpecificDatumReader;
 import java.io.File;
 
 /**
- * Apache avro deserializing example.
+ * Apache avro file deserializing example.
  * Avro data file contains avro schema
  * <p/>
  * Created by zhangkai on 9/24/14.

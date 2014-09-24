@@ -1,5 +1,6 @@
-package me.faolou.avro;
+package me.faolou.avro.file;
 
+import me.faolou.avro.User;
 import org.apache.avro.Schema;
 import org.apache.avro.file.DataFileWriter;
 import org.apache.avro.io.DatumWriter;
@@ -8,7 +9,7 @@ import org.apache.avro.specific.SpecificDatumWriter;
 import java.io.File;
 
 /**
- * Apache avro serializing example.
+ * Apache avro file serializing example.
  * Avro data file contains avro schema
  * <p/>
  * Created by zhangkai on 9/24/14.
