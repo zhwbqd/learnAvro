@@ -14,7 +14,7 @@ import java.io.FileOutputStream;
 
 /**
  * Apache avro data bytes serializing example
- * Created by zhangkai on 9/24/14.
+ * Created by Walter on 9/24/14.
  */
 public class AvroWriteExample {
 

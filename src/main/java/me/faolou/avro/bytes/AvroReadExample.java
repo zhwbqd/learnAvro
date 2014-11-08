@@ -18,6 +18,7 @@ import java.io.FileInputStream;
 public class AvroReadExample {
 
     public static void main(String[] args) throws Exception {
+        // Use a file as a binary stream data source
         FileInputStream fis = FileUtils.openInputStream(new File("sam.avro"));
 
         DatumReader<User> datumReader = new SpecificDatumReader<User>(User.class);
