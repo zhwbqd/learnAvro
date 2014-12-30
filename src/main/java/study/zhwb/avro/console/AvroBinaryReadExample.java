@@ -15,7 +15,7 @@ import java.io.FileInputStream;
  * Apache avro data bytes deserializing example
  * Created by zhangkai on 9/24/14.
  */
-public class AvroReadExample {
+public class AvroBinaryReadExample {
 
     public static void main(String[] args) throws Exception {
         // Use a file as a binary stream data source

@@ -1,9 +1,8 @@
 package study.zhwb.avro.console;
 
+import org.apache.avro.io.*;
+import org.apache.avro.specific.SpecificDatumReader;
 import study.zhwb.avro.User;
-import org.apache.avro.io.DatumWriter;
-import org.apache.avro.io.EncoderFactory;
-import org.apache.avro.io.JsonEncoder;
 import org.apache.avro.specific.SpecificDatumWriter;
 import org.apache.commons.io.IOUtils;
 import org.apache.commons.io.output.ByteArrayOutputStream;
@@ -28,7 +27,14 @@ public class AvroWriteJSONExample {
         datumWriter.write(user, jsonEncoder);
         jsonEncoder.flush();
 
-        System.out.println(fos.toString());
+        String string = fos.toString();
+        System.out.println(string);
+
+        JsonDecoder jsonDecoder = DecoderFactory.get().jsonDecoder(User.getClassSchema(), string);
+        DatumReader<User> datumReader = new SpecificDatumReader<User>(User.class);
+        User read = datumReader.read(user, jsonDecoder);
+
+        System.out.println(read);
 
         IOUtils.closeQuietly(fos);
     }

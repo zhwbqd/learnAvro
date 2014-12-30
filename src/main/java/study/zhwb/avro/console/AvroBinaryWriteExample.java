@@ -12,7 +12,7 @@ import org.apache.commons.io.output.ByteArrayOutputStream;
  * Apache avro data bytes serializing example
  * Created by Walter on 9/24/14.
  */
-public class AvroWriteExample {
+public class AvroBinaryWriteExample {
 
 
     public static void main(String[] args) throws Exception {
