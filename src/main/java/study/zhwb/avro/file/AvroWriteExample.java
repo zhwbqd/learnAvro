@@ -9,10 +9,6 @@ import org.apache.avro.specific.SpecificDatumWriter;
 import java.io.File;
 
 /**
- * Apache avro file serializing example.
- * Avro data file contains avro schema
- * <p/>
- * Created by Walter on 9/24/14.
  */
 public class AvroWriteExample {
 

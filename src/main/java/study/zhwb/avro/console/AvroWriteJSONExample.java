@@ -8,8 +8,6 @@ import org.apache.commons.io.IOUtils;
 import org.apache.commons.io.output.ByteArrayOutputStream;
 
 /**
- * Apache avro data bytes serializing example
- * Created by Walter on 9/24/14.
  */
 public class AvroWriteJSONExample {
 
