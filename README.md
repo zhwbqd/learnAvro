@@ -16,5 +16,7 @@ What can you find in this project?
 
 4.How to retrieve object from a byte stream
 
+5.How to transform your object to be a JSON, or other type
+
 
 TO BE CONTINUED

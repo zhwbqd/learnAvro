@@ -1,4 +1,4 @@
-package study.zhwb.avro.bytes;
+package study.zhwb.avro.console;
 
 import study.zhwb.avro.User;
 import org.apache.avro.io.BinaryDecoder;
