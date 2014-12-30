@@ -1,9 +1,9 @@
-package me.faolou.avro.bytes;
+package study.zhwb.avro.bytes;
 
-import me.faolou.avro.User;
+import study.zhwb.avro.User;
+import org.apache.avro.io.BinaryEncoder;
 import org.apache.avro.io.DatumWriter;
 import org.apache.avro.io.EncoderFactory;
-import org.apache.avro.io.JsonEncoder;
 import org.apache.avro.specific.SpecificDatumWriter;
 import org.apache.commons.io.IOUtils;
 import org.apache.commons.io.output.ByteArrayOutputStream;
@@ -12,7 +12,7 @@ import org.apache.commons.io.output.ByteArrayOutputStream;
  * Apache avro data bytes serializing example
  * Created by Walter on 9/24/14.
  */
-public class AvroWriteJSONExample {
+public class AvroWriteExample {
 
 
     public static void main(String[] args) throws Exception {
@@ -23,10 +23,10 @@ public class AvroWriteJSONExample {
                 .setFavoriteColor("Black")
                 .build();
 
-        DatumWriter<User> datumWriter = new SpecificDatumWriter<User>(User.class);
-        JsonEncoder jsonEncoder = EncoderFactory.get().jsonEncoder(User.getClassSchema(), fos);
-        datumWriter.write(user, jsonEncoder);
-        jsonEncoder.flush();
+        DatumWriter<User> datumWriter = new SpecificDatumWriter<>(User.class);
+        BinaryEncoder binaryEncoder = EncoderFactory.get().binaryEncoder(fos, null);
+        datumWriter.write(user, binaryEncoder);
+        binaryEncoder.flush();
 
         System.out.println(fos.toString());
 

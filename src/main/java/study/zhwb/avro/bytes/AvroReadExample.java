@@ -1,6 +1,6 @@
-package me.faolou.avro.bytes;
+package study.zhwb.avro.bytes;
 
-import me.faolou.avro.User;
+import study.zhwb.avro.User;
 import org.apache.avro.io.BinaryDecoder;
 import org.apache.avro.io.DatumReader;
 import org.apache.avro.io.DecoderFactory;

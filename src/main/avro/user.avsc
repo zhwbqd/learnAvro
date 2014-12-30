@@ -1,4 +1,4 @@
-{"namespace": "me.faolou.avro",
+{"namespace": "zhwb.study.avro",
  "type": "record",
  "name": "User",
  "fields": [

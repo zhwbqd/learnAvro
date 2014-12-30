@@ -1,6 +1,6 @@
-package me.faolou.avro.sample;
+package study.zhwb.avro.sample;
 
-import me.faolou.avro.User;
+import study.zhwb.avro.User;
 import org.apache.avro.file.DataFileReader;
 import org.apache.avro.file.DataFileWriter;
 import org.apache.avro.io.DatumReader;
